@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eric短網址</title>
+</head>
+<body>
+	<h1 align="center" > <font size="7" color="blue" face="微軟正黑體">短網址轉換</font> </h1>
+    <form align="center" action="/search-post" method="post">
+        {% csrf_token %}
+        <input type="text" name="q">
+        <input type="submit" face="微軟正黑體" value="短網址">
+    </form>
+ 
+    <h2 align="center"> 你的短網址: http://eric/{{ ran }} </h2>
+    <br>
+    <h3 align="center"> 你輸入的: {{ ctx }} </h3>
+
+    
+    
+
+</body>
+</html>
